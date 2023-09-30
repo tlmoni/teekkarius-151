@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"), url("./PlayfairDisplay-VariableFont_wght.ttf"),
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Josefin Slab";
+  src: local("Josefin Slab"), url("./JosefinSlab-VariableFont_wght.ttf"),
+    format("ttf");
+}

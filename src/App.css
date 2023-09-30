@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import "fonts/fonts.css";
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+  background: #c0b18b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background: #7a7158;
+  background-image: url("/public/images/black-paper.png");
+}
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  overflow: hidden;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Slab", serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: "Playfair Display", cursive;
+  font-size: 60pt;
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 1;
+  color: #26231e;
+  mix-blend-mode: color-burn;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 52pt;
+    line-height: 52pt;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 46pt;
+    line-height: 46pt;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30pt;
+  }
+}
+
+h2 {
+  font-size: 30pt;
+  font-weight: 300;
+  color: #35312b;
+  text-shadow: 0.3px 0.3px 2px Sienna;
+}
+
+h3 {
+  text-decoration: 1px dashed underline #888;
+  letter-spacing: 2px;
+  font-size: 20pt;
+  font-weight: 300;
+  font-style: italic;
+  color: #35312b;
+  margin-bottom: 40px;
+  text-shadow: 0.6px 0.6px 1px Sienna;
+}
+
+@media screen and (max-width: 700px) {
+  h3 {
+    margin-bottom: 70px;
+  }
+}
+
+p {
+  font-family: "Josefin Slab", serif;
+  font-size: 16pt;
+  font-weight: 500;
+  line-height: 28pt;
+  color: #35312b;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  text-shadow: 0.2px 0.2px 1.3px Sienna;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 12pt;
   }
 }
