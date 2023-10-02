@@ -34,7 +34,6 @@ const ExpandableTitle = styled.button`
 `
 
 const ExpandableContent = styled.div`
-  padding: 0 18px;
   max-height: ${(props) => (props.$expanded ? "100%" : "0")};
   overflow: ${(props) => (props.$expanded ? "visible" : "hidden")};
   padding: ${(props) => (props.$expanded ? "25px 0" : "0")};
@@ -70,10 +69,10 @@ const Chevron = styled(ExpandMore)`
 `
 
 const Image = styled.img`
-  max-width: 90%;
+  max-width: 98%;
 `
 
-const Expandable = ({ title = "Expandable", content = "Content", image="" }) => {
+const Expandable = (props) => {
   const [expanded, setExpanded] = useState(false)
 
   const handleClick = () => {
@@ -83,13 +82,13 @@ const Expandable = ({ title = "Expandable", content = "Content", image="" }) => 
   return (
     <>
       <ExpandableTitle onClick={handleClick}>
-        {title}
+        {props.title}
         <Chevron $expanded={expanded} />
       </ExpandableTitle>
       <ExpandableContent $expanded={expanded}>
-        <Image src={image} />
+        <Image src={props.image} />
         <br />
-        {content}
+        {props.children}
       </ExpandableContent>
     </>
   )

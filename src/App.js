@@ -47,17 +47,30 @@ const App = () => {
 
           <h1>{t("events")}</h1>
 
-          <Expandable title={t("igs")} content={t("lorem")} />
-          <Expandable title={t("fjs")} content={t("fjs-info")} />
-          <Expandable title={t("lks")} content={t("lks-info")} />
-          <Expandable
-            title={t("polin-appro")}
-            content={t("polin-appro-info")}
-          />
-          <Expandable title={t("elonkorjuu")} content={t("elonkorjuu-info")} />
-          <Expandable title={t("pll")} content={t("pll-info")} />
-          <Expandable title={t("tpj")} content={t("tpj-info")} image="/images/TPJ.png" />
-          <Expandable title={t("sillis")} content={t("sillis-info")} />
+          <Expandable title={t("igs")}>
+            <p>{t("lorem")}</p>
+          </Expandable>
+          <Expandable title={t("fjs")}>
+            <p>{t("fjs-info")}</p>
+          </Expandable>
+          <Expandable title={t("lks")}>
+            <p>{t("lks-info")}</p>
+          </Expandable>
+          <Expandable title={t("polin-appro")}>
+            <p>{t("polin-appro-info")}</p>
+          </Expandable>
+          <Expandable title={t("elonkorjuu")}>
+            <p>{t("elonkorjuu-info")}</p>
+          </Expandable>
+          <Expandable title={t("pll")}>
+            <p>{t("pll-info")}</p>
+          </Expandable>
+          <Expandable title={t("tpj")} image="/images/TPJ.png">
+            <p>{t("tpj-info")}</p>
+          </Expandable>
+          <Expandable title={t("sillis")}>
+            <p>{t("fjs-info")}</p>
+          </Expandable>
 
           <h2>{t("sponsors")}</h2>
 
