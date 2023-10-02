@@ -39,7 +39,7 @@ const App = () => {
 
           <Title src={"/images/teekkarius151-musta.png"} alt="Teekkarius 151" />
 
-          {/* <p>{t("info")}</p> */}
+          <p>{t("info")}</p>
 
           <h1>{t("events")}</h1>
 
