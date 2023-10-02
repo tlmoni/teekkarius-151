@@ -49,11 +49,11 @@ const ExpandableContent = styled.div`
   text-shadow: 0.2px 0.2px 1.3px Sienna;
 
   @media screen and (max-width: 900px) {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 12pt;
+    font-size: 10pt;
   }
 `
 
@@ -62,6 +62,10 @@ const Chevron = styled(ExpandMore)`
   float: right;
   transition: transform 0.2ms ease-in-out;
   transform: ${(props) => (props.$expanded ? "rotate(180deg)" : "")};
+
+  @media screen and (max-width: 900px) {
+    max-width: 8%;
+  }
 `
 
 const Expandable = ({ title = "Expandable", content = "Content" }) => {

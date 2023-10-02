@@ -47,27 +47,6 @@ h1 {
   mix-blend-mode: color-burn;
 }
 
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-size: 52pt;
-    line-height: 52pt;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  h1 {
-    font-size: 46pt;
-    line-height: 46pt;
-    padding: 20px 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 28pt;
-  }
-}
-
 h2 {
   font-family: "Playfair Display SC", cursive;
   font-size: 50pt;
@@ -79,6 +58,10 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 52pt;
+    line-height: 52pt;
+  }
   h2 {
     font-size: 40pt;
     line-height: 40pt;
@@ -86,16 +69,34 @@ h2 {
 }
 
 @media screen and (max-width: 900px) {
+  h1 {
+    font-size: 40pt;
+    line-height: 40pt;
+    padding: 20px 0px;
+  }
   h2 {
     font-size: 32pt;
-    line-height: 35pt;
+    line-height: 32pt;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 30pt;
+    line-height: 30pt;
     padding: 20px 0px;
   }
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24pt;
+    line-height: 24pt;
+  }
   h2 {
     font-size: 22pt;
+    line-height: 22pt;
   }
 }
 

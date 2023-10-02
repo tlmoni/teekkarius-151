@@ -11,11 +11,10 @@ const Content = styled.div`
   align-items: center;
   justify-content: flex-start;
   max-width: 55%;
-  height: auto;
   padding: 30px 80px 200px 80px;
   z-index: 1;
   filter: brightness(0.9) sepia(20%) saturate(80%);
-  border-radius: 20px;
+  border-radius: 10px;
   height: 90vh;
   clip-path: polygon(
     0% 0%,
