@@ -16,6 +16,8 @@ const App = () => {
       i18n.changeLanguage("fi")
     } else if (i18n.language === "fi") {
       i18n.changeLanguage("en")
+    } else {
+      i18n.changeLanguage("fi")
     }
   }
 
@@ -24,6 +26,8 @@ const App = () => {
       return "fi"
     } else if (i18n.language === "fi") {
       return "en"
+    } else {
+      return "fi"
     }
   }
 

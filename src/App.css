@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 95vh;
   overflow: hidden;
   background: #000000;
   margin: 0;
@@ -58,7 +58,7 @@ h1 {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 30pt;
+    font-size: 28pt;
   }
 }
 
@@ -81,7 +81,7 @@ h2 {
 
 @media screen and (max-width: 900px) {
   h2 {
-    font-size: 35pt;
+    font-size: 34pt;
     line-height: 35pt;
     padding: 20px 0px;
   }
@@ -89,7 +89,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 30pt;
+    font-size: 24pt;
   }
 }
 

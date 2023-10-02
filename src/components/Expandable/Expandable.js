@@ -21,11 +21,15 @@ const ExpandableTitle = styled.button`
   text-shadow: 0.2px 0.2px 1.3px Sienna;
 
   @media screen and (max-width: 900px) {
-    font-size: 18pt;
+    font-size: 16pt;
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 16pt;
+    font-size: 14pt;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 12pt;
   }
 `
 
@@ -46,6 +50,10 @@ const ExpandableContent = styled.div`
 
   @media screen and (max-width: 900px) {
     font-size: 14pt;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 12pt;
   }
 `
 

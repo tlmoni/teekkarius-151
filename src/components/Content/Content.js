@@ -10,7 +10,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 55%;
+  max-width: 55%;
   height: auto;
   padding: 30px 80px 200px 80px;
   z-index: 1;
@@ -59,21 +59,21 @@ const Content = styled.div`
   overflow: auto;
 
   @media screen and (max-width: 1800px) {
-    width: 60%;
+    max-width: 60%;
   }
 
   @media screen and (max-width: 1500px) {
-    width: 68%;
+    max-width: 68%;
   }
 
   @media screen and (max-width: 868px) {
     padding: 30px 60px 50px 60px;
-    width: 75%;
+    max-width: 75%;
   }
 
   @media screen and (max-width: 560px) {
+    max-width: 80%;
     padding: 30px 30px 50px 30px;
-    width: 80%;
   }
 `
 
