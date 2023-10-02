@@ -6,7 +6,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   filter: drop-shadow(5px 5px 25px black);
 `
 

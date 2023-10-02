@@ -10,7 +10,6 @@ const SponsorsList = () => {
       <Sponsor src="/images/TJ.svg" />
       <Sponsor src="/images/IE.svg" />
       <Sponsor src="/images/TPTMK.svg" />
-      <Sponsor />
     </>
   )
 }
