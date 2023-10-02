@@ -25,11 +25,11 @@ const ExpandableTitle = styled.button`
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 
   @media screen and (max-width: 400px) {
-    font-size: 12pt;
+    font-size: 10pt;
   }
 `
 

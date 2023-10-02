@@ -8,6 +8,12 @@
   width: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
 ::-webkit-scrollbar-track {
   background: #c0b18b;
 }
@@ -81,7 +87,7 @@ h2 {
 
 @media screen and (max-width: 900px) {
   h2 {
-    font-size: 34pt;
+    font-size: 32pt;
     line-height: 35pt;
     padding: 20px 0px;
   }
@@ -89,7 +95,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
   h2 {
-    font-size: 24pt;
+    font-size: 22pt;
   }
 }
 
