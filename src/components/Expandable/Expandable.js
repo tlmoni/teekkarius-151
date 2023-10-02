@@ -20,6 +20,10 @@ const ExpandableTitle = styled.button`
   word-spacing: 3px;
   text-shadow: 0.2px 0.2px 1.3px Sienna;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 18pt;
+  }
+
   @media screen and (max-width: 900px) {
     font-size: 16pt;
   }
@@ -38,23 +42,8 @@ const ExpandableContent = styled.div`
   overflow: ${(props) => (props.$expanded ? "visible" : "hidden")};
   padding: ${(props) => (props.$expanded ? "25px 0" : "0")};
   transition: all 0.2s ease-in-out;
-  font-family: "Josefin Slab", serif;
-  font-size: 16pt;
-  font-weight: 500;
-  line-height: 24pt;
-  color: #35312b;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-  text-shadow: 0.2px 0.2px 1.3px Sienna;
   text-align: center;
-
-  @media screen and (max-width: 900px) {
-    font-size: 12pt;
-  }
-
-  @media screen and (max-width: 600px) {
-    font-size: 10pt;
-  }
+  max-width: 95%;
 `
 
 const Chevron = styled(ExpandMore)`
@@ -70,6 +59,7 @@ const Chevron = styled(ExpandMore)`
 
 const Image = styled.img`
   max-width: 98%;
+  margin-bottom: 10px;
 `
 
 const Expandable = (props) => {

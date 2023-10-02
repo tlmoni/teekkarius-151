@@ -72,12 +72,12 @@ const Content = styled.div`
 
   @media screen and (max-width: 600px) {
     max-width: 80%;
-    padding: 30px 30px 50px 30px;
+    padding: 20px 20px 50px 20px;
   }
 
   @media screen and (max-width: 450px) {
     max-width: 85%;
-    padding: 30px 30px 50px 30px;
+    padding: 20px 20px 50px 20px;
   }
 `
 
