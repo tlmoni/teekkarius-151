@@ -47,6 +47,7 @@ const ExpandableContent = styled.div`
   letter-spacing: 1px;
   word-spacing: 3px;
   text-shadow: 0.2px 0.2px 1.3px Sienna;
+  text-align: center;
 
   @media screen and (max-width: 900px) {
     font-size: 12pt;
@@ -68,7 +69,11 @@ const Chevron = styled(ExpandMore)`
   }
 `
 
-const Expandable = ({ title = "Expandable", content = "Content" }) => {
+const Image = styled.img`
+  max-width: 90%;
+`
+
+const Expandable = ({ title = "Expandable", content = "Content", image="" }) => {
   const [expanded, setExpanded] = useState(false)
 
   const handleClick = () => {
@@ -81,7 +86,11 @@ const Expandable = ({ title = "Expandable", content = "Content" }) => {
         {title}
         <Chevron $expanded={expanded} />
       </ExpandableTitle>
-      <ExpandableContent $expanded={expanded}>{content}</ExpandableContent>
+      <ExpandableContent $expanded={expanded}>
+        <Image src={image} />
+        <br />
+        {content}
+      </ExpandableContent>
     </>
   )
 }

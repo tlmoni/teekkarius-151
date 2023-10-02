@@ -56,7 +56,7 @@ const App = () => {
           />
           <Expandable title={t("elonkorjuu")} content={t("elonkorjuu-info")} />
           <Expandable title={t("pll")} content={t("pll-info")} />
-          <Expandable title={t("tpj")} content={t("tpj-info")} />
+          <Expandable title={t("tpj")} content={t("tpj-info")} image="/images/TPJ.png" />
           <Expandable title={t("sillis")} content={t("sillis-info")} />
 
           <h2>{t("sponsors")}</h2>
