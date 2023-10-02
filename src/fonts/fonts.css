@@ -5,7 +5,19 @@
 }
 
 @font-face {
+  font-family: "Playfair Display SC";
+  src: local("Playfair Display SC"), url("./PlayfairDisplaySC-Regular.ttf"),
+    format("ttf");
+}
+
+@font-face {
   font-family: "Josefin Slab";
   src: local("Josefin Slab"), url("./JosefinSlab-VariableFont_wght.ttf"),
+    format("ttf");
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: local("Josefin Sans"), url("./JosefinSans-VariableFont_wght.ttf"),
     format("ttf");
 }

@@ -1,3 +1,4 @@
+import SponsorsList from "./components/SponsorsList/SponsorsList"
 import Expandable from "./components/Expandable/Expandable"
 import Background from "./components/Background/Background"
 import Container from "./components/Container/Container"
@@ -38,7 +39,7 @@ const App = () => {
 
           <Title src={"/images/teekkarius151-musta.png"} alt="Teekkarius 151" />
 
-          <p>{t("info")}</p>
+          {/* <p>{t("info")}</p> */}
 
           <h1>{t("events")}</h1>
 
@@ -53,6 +54,10 @@ const App = () => {
           <Expandable title={t("pll")} content={t("pll-info")} />
           <Expandable title={t("tpj")} content={t("tpj-info")} />
           <Expandable title={t("sillis")} content={t("sillis-info")} />
+
+          <h2>{t("sponsors")}</h2>
+
+          <SponsorsList />
         </Content>
       </Container>
     </>

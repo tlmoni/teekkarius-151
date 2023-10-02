@@ -6,7 +6,7 @@ const Background = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2e1511;
+  background: #2e0808;
   background-size: cover;
   background-position: center top;
   z-index: -1;
