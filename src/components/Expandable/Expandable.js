@@ -12,13 +12,21 @@ const ExpandableTitle = styled.button`
   background-color: transparent;
   text-align: left;
   outline: none;
-  font-family: "Playfair Display";
-  font-size: 24px;
+  font-family: "Playfair Display SC";
+  font-size: 20pt;
   font-weight: 500;
   color: #35312b;
   letter-spacing: 1px;
   word-spacing: 3px;
   text-shadow: 0.2px 0.2px 1.3px Sienna;
+
+  @media screen and (max-width: 900px) {
+    font-size: 18pt;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 16pt;
+  }
 `
 
 const ExpandableContent = styled.div`
@@ -30,11 +38,15 @@ const ExpandableContent = styled.div`
   font-family: "Josefin Slab", serif;
   font-size: 16pt;
   font-weight: 500;
-  line-height: 28pt;
+  line-height: 24pt;
   color: #35312b;
   letter-spacing: 1px;
   word-spacing: 3px;
   text-shadow: 0.2px 0.2px 1.3px Sienna;
+
+  @media screen and (max-width: 900px) {
+    font-size: 14pt;
+  }
 `
 
 const Chevron = styled(ExpandMore)`

@@ -7,8 +7,9 @@ const SponsorsList = () => {
       <Sponsor src="/images/HSY.svg" />
       <Sponsor src="/images/Unisport.svg" />
       <Sponsor src="/images/AYY.svg" />
-      <Sponsor src="/images/IE.svg" />
       <Sponsor src="/images/TJ.svg" />
+      <Sponsor src="/images/IE.svg" />
+      <Sponsor src="/images/TPTMK.svg" />
       <Sponsor />
     </>
   )
