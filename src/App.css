@@ -30,6 +30,7 @@ body {
   justify-content: center;
   height: 95vh;
   overflow: hidden;
+  overflow-y: hidden;
   background: #000000;
   margin: 0;
   padding: 0;

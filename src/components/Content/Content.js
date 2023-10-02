@@ -15,7 +15,7 @@ const Content = styled.div`
   z-index: 1;
   filter: brightness(0.9) sepia(20%) saturate(80%);
   border-radius: 10px;
-  height: 90%;
+  height: 100%;
   clip-path: polygon(
     0% 0%,
     0% 93%,
