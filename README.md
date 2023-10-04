@@ -2,6 +2,8 @@
 
 ![Image](public/images/teekkarius151-musta.png)
 
+https://teekkarius-151.vercel.app
+
 ## Description
 
 This is the website for Teekkarius 151 (Teekkariperinneviikko with its events and sponsors).

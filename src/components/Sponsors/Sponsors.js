@@ -1,6 +1,6 @@
 import Sponsor from "../Sponsor/Sponsor"
 
-const SponsorsList = () => {
+const Sponsors = () => {
   return (
     <>
       <Sponsor src="/images/Lokki.svg" />
@@ -14,4 +14,4 @@ const SponsorsList = () => {
   )
 }
 
-export default SponsorsList
+export default Sponsors

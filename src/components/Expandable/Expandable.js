@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { useState } from "react"
 
 const ExpandableTitle = styled.button`
-  cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
@@ -19,6 +18,11 @@ const ExpandableTitle = styled.button`
   letter-spacing: 1px;
   word-spacing: 3px;
   text-shadow: 0.2px 0.2px 1.3px Sienna;
+
+  &:hover {
+    background-color: color-mix(in srgb, #a69b85 20%, transparent);
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 1200px) {
     font-size: 18pt;
@@ -38,12 +42,14 @@ const ExpandableTitle = styled.button`
 `
 
 const ExpandableContent = styled.div`
-  max-height: ${(props) => (props.$expanded ? "100%" : "0")};
+  height: ${(props) => (props.$expanded ? "100%" : "0")};
   overflow: ${(props) => (props.$expanded ? "visible" : "hidden")};
   padding: ${(props) => (props.$expanded ? "25px 0" : "0")};
   transition: all 0.2s ease-in-out;
   text-align: center;
   max-width: 95%;
+  position: relative;
+  height: max-content;
 `
 
 const Chevron = styled(ExpandMore)`
@@ -59,7 +65,7 @@ const Chevron = styled(ExpandMore)`
 
 const Image = styled.img`
   max-width: 98%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `
 
 const Expandable = (props) => {

@@ -2,10 +2,17 @@
 
 * {
   box-sizing: border-box;
+  white-space: pre-line;
 }
 
 ::-webkit-scrollbar {
   width: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -105,7 +112,7 @@ h2 {
 
 p {
   font-family: "Josefin Slab", serif;
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 600;
   line-height: 24pt;
   color: #35312b;
@@ -116,16 +123,23 @@ p {
   overflow: visible;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   p {
     font-size: 14pt;
     line-height: 22pt;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   p {
     font-size: 12pt;
+    line-height: 22pt;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 10pt;
     line-height: 18pt;
   }
 }
@@ -135,4 +149,8 @@ p {
     font-size: 10pt;
     line-height: 14pt;
   }
+}
+
+a {
+  text-decoration: none;
 }
