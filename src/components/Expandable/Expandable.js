@@ -44,7 +44,7 @@ const ExpandableTitle = styled.button`
 const ExpandableContent = styled.div`
   height: ${(props) => (props.$expanded ? "100%" : "0")};
   overflow: ${(props) => (props.$expanded ? "visible" : "hidden")};
-  padding: ${(props) => (props.$expanded ? "25px 0" : "0")};
+  padding-bottom: ${(props) => (props.$expanded ? "25px" : "0")};
   transition: all 0.2s ease-in-out;
   text-align: center;
   max-width: 95%;
@@ -65,6 +65,7 @@ const Chevron = styled(ExpandMore)`
 
 const Image = styled.img`
   max-width: 98%;
+  margin-top: 20px;
   margin-bottom: 20px;
 `
 
