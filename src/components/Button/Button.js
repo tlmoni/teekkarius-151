@@ -3,7 +3,7 @@ import styled from "styled-components"
 const Button = styled.button`
   background: transparent;
   border-radius: 5px;
-  border: 2px solid #a69b85;
+  border: 2px solid #807663;
   color: #35312b;
   margin: 0.1em 0.5em;
   padding: 0.25em 1em;
@@ -23,7 +23,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    background: #a69b85;
+    background: #807663;
     cursor: pointer;
   }
 

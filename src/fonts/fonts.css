@@ -1,23 +1,34 @@
 @font-face {
-  font-family: "Playfair Display";
-  src: local("Playfair Display"), url("./PlayfairDisplay-VariableFont_wght.ttf"),
-    format("ttf");
-}
-
-@font-face {
   font-family: "Playfair Display SC";
-  src: local("Playfair Display SC"), url("./PlayfairDisplaySC-Regular.ttf"),
-    format("ttf");
+  src: url("./PlayfairDisplaySC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Josefin Slab";
-  src: local("Josefin Slab"), url("./JosefinSlab-VariableFont_wght.ttf"),
-    format("ttf");
+  src: url("./JosefinSlab-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin Slab SemiBold";
+  src: url("./JosefinSlab-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Josefin Sans";
-  src: local("Josefin Sans"), url("./JosefinSans-VariableFont_wght.ttf"),
-    format("ttf");
+  src: url("./JosefinSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Josefin Sans Light";
+  src: url("./JosefinSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
