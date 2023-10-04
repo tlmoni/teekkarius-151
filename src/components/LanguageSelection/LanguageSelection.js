@@ -2,6 +2,7 @@ import { ExpandMore } from "@mui/icons-material"
 import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import Flag from "../Flag/Flag"
+import { useEffect } from "react"
 
 const Dropdown = styled.div`
   display: inline-block;
@@ -43,19 +44,12 @@ const LanguageSelection = () => {
 
   const languages = ["en", "fi"]
 
-  const changeLanguage = (lng) => {
-    if (i18n.language === "") {
-      i18n.changeLanguage("fi")
-    } else {
-      i18n.changeLanguage(lng)
-    }
-  }
+  useEffect(() => {
+    i18n.changeLanguage("fi")
+  }, [])
 
-  const getLanguage = () => {
-    console.log(i18n.language)
-    return i18n.language !== "en" || i18n.language !== "fi"
-      ? i18n.language
-      : "fi"
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
   }
 
   return (
@@ -69,7 +63,7 @@ const LanguageSelection = () => {
           }}
         >
           <Flag
-            src={`/images/${getLanguage()}.svg`}
+            src={`/images/${i18n.language}.svg`}
             style={{ display: "inline-block" }}
           />
           <Chevron style={{ display: "inline-block" }} />
