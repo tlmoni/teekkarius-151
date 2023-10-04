@@ -2,7 +2,6 @@ import { ExpandMore } from "@mui/icons-material"
 import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 import Flag from "../Flag/Flag"
-import { useEffect } from "react"
 
 const Dropdown = styled.div`
   display: inline-block;
@@ -43,10 +42,6 @@ const LanguageSelection = () => {
   const { i18n } = useTranslation()
 
   const languages = ["en", "fi"]
-
-  useEffect(() => {
-    i18n.changeLanguage("fi")
-  }, [])
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
