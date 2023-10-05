@@ -18,7 +18,7 @@ const App = () => {
         <Content>
           <LanguageSelection />
 
-          <Title src={"/images/teekkarius151-musta.png"} alt="Teekkarius 151" />
+          <Title src={"/images/Teekkarius-151.svg"} alt="Teekkarius 151" />
 
           <p>{t("info")}</p>
 
