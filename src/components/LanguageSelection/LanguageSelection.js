@@ -8,29 +8,28 @@ const Dropdown = styled.div`
   position: relative;
   margin-left: auto;
   height: fit-content;
-  display: table;
 
   & img {
     width: 100px;
   }
 
   &:hover div {
-    display: block;
+    display: flex;
   }
 `
 
 const DropdownContent = styled.div`
   display: none;
-  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   overflow: auto;
+  position: absolute;
 `
 
 const Chevron = styled(ExpandMore)`
   color: #3d1607;
   float: right;
-  transition: transform 0.2ms ease-in-out;
-  transform: ${(props) => (props.$expanded ? "rotate(180deg)" : "")};
   max-width: 20px;
 
   @media screen and (max-width: 900px) {
@@ -41,7 +40,7 @@ const Chevron = styled(ExpandMore)`
 const LanguageSelection = () => {
   const { i18n } = useTranslation()
 
-  const languages = ["en", "fi"]
+  const languages = ["fi", "se", "en"]
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
