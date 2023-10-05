@@ -64,7 +64,7 @@ const Chevron = styled(ExpandMore)`
 `
 
 const Image = styled.img`
-  max-width: 98%;
+  max-width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 `

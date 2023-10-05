@@ -112,7 +112,7 @@ h2 {
 
 p {
   font-family: "Josefin Slab", serif;
-  font-size: 14pt;
+  font-size: 16pt;
   line-height: 24pt;
   color: #35312b;
   letter-spacing: 2px;
@@ -131,21 +131,21 @@ p {
 
 @media screen and (max-width: 900px) {
   p {
-    font-size: 12pt;
+    font-size: 14pt;
     line-height: 22pt;
   }
 }
 
 @media screen and (max-width: 600px) {
   p {
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 18pt;
   }
 }
 
 @media screen and (max-width: 280px) {
   p {
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 14pt;
   }
 }
