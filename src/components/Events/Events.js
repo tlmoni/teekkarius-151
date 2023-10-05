@@ -16,27 +16,38 @@ const Events = () => {
 
   return (
     <>
-      <Expandable title={t("alkupamaus")}>
+      <Expandable title={`13.11. ${t("alkupamaus")}`}>
         <EventInfo date="2023-11-13" time="?" location="?" />
         <p>{t("alkupamaus-info")}</p>
       </Expandable>
 
-      <Expandable title={t("igs")}>
+      <Expandable title={`13.11. ${t("igs")}`}>
         <EventInfo date="2023-11-13" time="?" location="Servin mökki" />
         <p>{t("igs-info")}</p>
       </Expandable>
 
-      <Expandable title={t("fjs")}>
+      <Expandable title={`14.11. ${t("fjs")}`}>
         <EventInfo date="2023-11-14" time="?" location="Servin mökki" />
         <p>{t("fjs-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://www.facebook.com/events/691369186238851"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook id="icon" />
+            <p>{t("fjs")}</p>
+          </Button>
+        </Links>
       </Expandable>
 
-      <Expandable title={t("lks")}>
+      <Expandable title={`14.11. ${t("lks")}`}>
         <EventInfo date="2023-11-14" time="?" location="Otakaari 20" />
         <p>{t("lks-info")}</p>
       </Expandable>
 
-      <Expandable title={t("polin-appro")} image="/images/polin-appro.jpg">
+      <Expandable title={`15.11. ${t("polin-appro")}`} image="/images/polin-appro.jpg">
         <EventInfo
           date="2023-11-15"
           time="16:00-04:00"
@@ -69,22 +80,22 @@ const Events = () => {
             rel="noopener noreferrer"
           >
             <Facebook id="icon" />
-            <p>Polin Appro 2023</p>
+            <p>{t("polin-appro")}</p>
           </Button>
         </Links>
       </Expandable>
 
-      <Expandable title={t("elonkorjuu")}>
+      <Expandable title={`16.11. ${t("elonkorjuu")}`}>
         <EventInfo date="2023-11-16" time="?" location="Servin mökki" />
         <p>{t("elonkorjuu-info")}</p>
       </Expandable>
 
-      <Expandable title={t("pll")}>
+      <Expandable title={`17.11. ${t("pll")}`}>
         <EventInfo date="2023-11-17" time="?" location="Rantasauna" />
         <p>{t("pll-info")}</p>
       </Expandable>
 
-      <Expandable title={t("tpj")} image="/images/TPJ.png">
+      <Expandable title={`18.11. ${t("tpj")}`} image="/images/TPJ.png">
         <EventInfo date="2023-11-18" time="19:00" location="Kalastajatorppa" />
         <p>{t("tpj-info")}</p>
         <Links>
@@ -118,7 +129,7 @@ const Events = () => {
         </Links>
       </Expandable>
 
-      <Expandable title={t("sillis")}>
+      <Expandable title={`19.11. ${t("sillis")}`}>
         <EventInfo date="2023-11-19" time="?" location="Servin mökki" />
         <p>{t("sillis-info")}</p>
         <Links>
