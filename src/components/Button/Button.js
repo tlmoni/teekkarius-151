@@ -6,7 +6,7 @@ const Button = styled.button`
   border: 2px solid #807663;
   color: #35312b;
   margin: 0.1em 0.5em;
-  padding: 0.25em 1em;
+  padding: 0.15em 1em;
   overflow: visible;
   text-align: center;
   display: flex;

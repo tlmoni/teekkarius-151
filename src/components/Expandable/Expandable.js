@@ -47,7 +47,7 @@ const ExpandableContent = styled.div`
   padding-bottom: ${(props) => (props.$expanded ? "25px" : "0")};
   transition: all 0.2s ease-in-out;
   text-align: center;
-  max-width: 95%;
+  max-width: 98%;
   position: relative;
   height: max-content;
 `

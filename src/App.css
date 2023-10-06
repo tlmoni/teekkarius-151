@@ -131,21 +131,21 @@ p {
 
 @media screen and (max-width: 900px) {
   p {
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 22pt;
   }
 }
 
 @media screen and (max-width: 600px) {
   p {
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 18pt;
   }
 }
 
 @media screen and (max-width: 280px) {
   p {
-    font-size: 12pt;
+    font-size: 11pt;
     line-height: 14pt;
   }
 }
