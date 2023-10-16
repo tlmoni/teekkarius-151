@@ -3,6 +3,7 @@ import {
   Facebook,
   Instagram,
   LocalActivity,
+  Lyrics,
   Telegram
 } from "@mui/icons-material"
 import Expandable from "../Expandable/Expandable"
@@ -22,12 +23,23 @@ const Events = () => {
       </Expandable>
 
       <Expandable title={`13.11. ${t("igs")}`}>
-        <EventInfo date="2023-11-13" time="?" location="Servin mökki" />
+        <EventInfo date="2023-11-13" time="17:30" location="Servin mökki" />
         <p>{t("igs-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://www.instagram.com/teekkarijaosto/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Instagram id="icon" />
+            <p>teekkarijaosto</p>
+          </Button>
+        </Links>
       </Expandable>
 
       <Expandable title={`14.11. ${t("fjs")}`}>
-        <EventInfo date="2023-11-14" time="?" location="Servin mökki" />
+        <EventInfo date="2023-11-14" time="17:00" location="Servin mökki" />
         <p>{t("fjs-info")}</p>
         <Links>
           <Button
@@ -43,11 +55,47 @@ const Events = () => {
       </Expandable>
 
       <Expandable title={`14.11. ${t("lks")}`}>
-        <EventInfo date="2023-11-14" time="?" location="Otakaari 20" />
+        <EventInfo
+          date="2023-11-14"
+          time="18:00-01:00"
+          location="Otakaari 20"
+        />
         <p>{t("lks-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://forms.office.com/e/8hPYekt3az"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Lyrics id="icon" />
+            <p>{t("form")}</p>
+          </Button>
+          <Button
+            as="a"
+            href="https://kide.app/events/cc9191f8-46ed-4892-8ff0-6f7369086274"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LocalActivity id="icon" />
+            <p>kide.app</p>
+          </Button>
+          <Button
+            as="a"
+            href="https://t.me/lukkaritirehtoori"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Telegram id="icon" />
+            <p>lukkaritirehtoori</p>
+          </Button>
+        </Links>
       </Expandable>
 
-      <Expandable title={`15.11. ${t("polin-appro")}`} image="/images/polin-appro.jpg">
+      <Expandable
+        title={`15.11. ${t("polin-appro")}`}
+        image="/images/polin-appro.jpg"
+      >
         <EventInfo
           date="2023-11-15"
           time="16:00-04:00"
@@ -91,7 +139,7 @@ const Events = () => {
       </Expandable>
 
       <Expandable title={`17.11. ${t("pll")}`}>
-        <EventInfo date="2023-11-17" time="?" location="Rantasauna" />
+        <EventInfo date="2023-11-17" time="16:30" location="Rantasauna" />
         <p>{t("pll-info")}</p>
       </Expandable>
 
