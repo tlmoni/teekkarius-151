@@ -22,7 +22,7 @@ const Events = () => {
         <p>{t("alkupamaus-info")}</p>
       </Expandable>
 
-      <Expandable title={`13.11. ${t("igs")}`}>
+      <Expandable title={`13.11. ${t("igs")}`} image="/images/IGS.png">
         <EventInfo date="2023-11-13" time="17:30" location="Servin mökki" />
         <p>{t("igs-info")}</p>
         <Links>
