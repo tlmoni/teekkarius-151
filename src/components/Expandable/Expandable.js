@@ -2,7 +2,7 @@ import { ExpandMore } from "@mui/icons-material"
 import styled from "styled-components"
 import { useState } from "react"
 
-const ExpandableTitle = styled.button`
+const ExpandableTitle = styled.div`
   padding: 18px;
   width: 100%;
   border: none;
@@ -42,21 +42,19 @@ const ExpandableTitle = styled.button`
 `
 
 const ExpandableContent = styled.div`
-  height: ${(props) => (props.$expanded ? "100%" : "0")};
-  overflow: ${(props) => (props.$expanded ? "visible" : "hidden")};
-  padding-bottom: ${(props) => (props.$expanded ? "25px" : "0")};
+  height: ${({ $expanded }) => $expanded ? "max-content" : "0"};
+  padding-bottom: ${({ $expanded }) => $expanded ? "25px" : "0"};
+  overflow: ${({ $expanded }) => $expanded ? "visible" : "hidden"};
+  max-width: 98%;
   transition: all 0.2s ease-in-out;
   text-align: center;
-  max-width: 98%;
-  position: relative;
-  height: max-content;
+  display: inline-block;
+  justify-content: center;
 `
 
 const Chevron = styled(ExpandMore)`
   color: #3d1607;
   float: right;
-  transition: transform 0.2ms ease-in-out;
-  transform: ${(props) => (props.$expanded ? "rotate(180deg)" : "")};
 
   @media screen and (max-width: 900px) {
     max-width: 8%;
@@ -76,11 +74,16 @@ const Expandable = (props) => {
     setExpanded(!expanded)
   }
 
+  const rotateChevron = {
+    transform: expanded ? "rotate(180deg)" : "",
+    transition: "transform 0.2s ease-in-out"
+  }
+
   return (
     <>
       <ExpandableTitle onClick={handleClick}>
         {props.title}
-        <Chevron $expanded={expanded} />
+        <Chevron $expanded={expanded} style={rotateChevron}/>
       </ExpandableTitle>
       <ExpandableContent $expanded={expanded}>
         <Image src={props.image} />

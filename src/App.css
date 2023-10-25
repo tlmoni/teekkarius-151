@@ -120,6 +120,7 @@ p {
   text-shadow: 0.2px 0.2px 1.3px Sienna;
   margin: 0;
   overflow: visible;
+  text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

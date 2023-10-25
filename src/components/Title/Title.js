@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const Title = styled.img`
   width: 80%;
+  margin-bottom: 5vh;
 
   @media screen and (max-width: 1500px) {
     width: 90%;
