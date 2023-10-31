@@ -42,9 +42,9 @@ const ExpandableTitle = styled.div`
 `
 
 const ExpandableContent = styled.div`
-  height: ${({ $expanded }) => $expanded ? "max-content" : "0"};
-  padding-bottom: ${({ $expanded }) => $expanded ? "25px" : "0"};
-  overflow: ${({ $expanded }) => $expanded ? "visible" : "hidden"};
+  height: ${({ $expanded }) => ($expanded ? "max-content" : "0")};
+  padding-bottom: ${({ $expanded }) => ($expanded ? "25px" : "0")};
+  overflow: ${({ $expanded }) => ($expanded ? "visible" : "hidden")};
   max-width: 98%;
   transition: all 0.2s ease-in-out;
   text-align: center;
@@ -83,7 +83,7 @@ const Expandable = (props) => {
     <>
       <ExpandableTitle onClick={handleClick}>
         {props.title}
-        <Chevron $expanded={expanded} style={rotateChevron}/>
+        <Chevron $expanded={expanded} style={rotateChevron} />
       </ExpandableTitle>
       <ExpandableContent $expanded={expanded}>
         <Image src={props.image} />
