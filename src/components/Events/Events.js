@@ -7,10 +7,10 @@ import {
   Lyrics,
   Telegram
 } from "@mui/icons-material"
-import Expandable from "../Expandable/Expandable"
-import EventInfo from "../EventInfo/EventInfo"
 import { useTranslation } from "react-i18next"
 import Button from "../Button/Button"
+import EventInfo from "../EventInfo/EventInfo"
+import Expandable from "../Expandable/Expandable"
 import Links from "../Links/Links"
 
 const Events = () => {

@@ -1,6 +1,6 @@
 import { ExpandMore } from "@mui/icons-material"
-import styled from "styled-components"
 import { useState } from "react"
+import styled from "styled-components"
 
 const ExpandableTitle = styled.div`
   padding: 18px;
