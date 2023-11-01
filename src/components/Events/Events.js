@@ -1,6 +1,7 @@
 import {
   Email,
   Facebook,
+  Info,
   Instagram,
   LocalActivity,
   Lyrics,
@@ -141,6 +142,31 @@ const Events = () => {
         <p>{t("elonkorjuu-info")}</p>
       </Expandable>
 
+      <Expandable title={`16.11. ${t("merikanto")}`} image="/images/PK.jpg">
+        <EventInfo date="2023-11-16" time="19:00" location="Ritarihuone" />
+        <p>{t("merikanto-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://polyteknikkojenkuoro.fi/konsertit/merikanto-aarre-ritarihuone-16-11-klo-19/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Info id="icon" />
+            <p>polyteknikkojenkuoro.fi</p>
+          </Button>
+          <Button
+            as="a"
+            href="https://www.lippu.fi/artist/polyteknikkojen-kuoro/merikanto-aarre-konsertti-3513378/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LocalActivity id="icon" />
+            <p>lippu.fi</p>
+          </Button>
+        </Links>
+      </Expandable>
+
       <Expandable title={`17.11. ${t("pll")}`} image="/images/PLL.png">
         <EventInfo date="2023-11-17" time="16:30" location="Rantasauna" />
         <p>{t("pll-info")}</p>
@@ -177,10 +203,19 @@ const Events = () => {
             <Telegram id="icon" />
             <p>senjasantala</p>
           </Button>
+          <Button
+            as="a"
+            href="https://www.facebook.com/events/314706601277567"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook id="icon" />
+            <p>{t("tpj")}</p>
+          </Button>
         </Links>
       </Expandable>
 
-      <Expandable title={`19.11. ${t("sillis")}`}>
+      <Expandable title={`19.11. ${t("sillis")}`} image="/images/sillis.jpg">
         <EventInfo date="2023-11-19" time="?" location="Servin mökki" />
         <p>{t("sillis-info")}</p>
         <Links>
@@ -192,6 +227,15 @@ const Events = () => {
           >
             <LocalActivity id="icon" />
             <p>kide.app</p>
+          </Button>
+          <Button
+            as="a"
+            href="https://www.facebook.com/events/7520316617981953"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook id="icon" />
+            <p>{t("sillis")}</p>
           </Button>
         </Links>
       </Expandable>
