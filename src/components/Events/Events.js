@@ -138,8 +138,28 @@ const Events = () => {
         title={`16.11. ${t("elonkorjuu")}`}
         image="/images/elonkorjuu.jpg"
       >
-        <EventInfo date="2023-11-16" time="?" location="Servin mökki" />
+        <EventInfo date="2023-11-16" time="18:00-00:00" location="Servin mökki" />
         <p>{t("elonkorjuu-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://kide.app/events/f46b512c-15f5-422b-a294-64b675bc6529"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LocalActivity id="icon" />
+            <p>kide.app</p>
+          </Button>
+          <Button
+            as="a"
+            href="https://www.ayy.fi/fi/elonkorjuu-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Info id="icon" />
+            <p>ayy.fi</p>
+          </Button>
+        </Links>
       </Expandable>
 
       <Expandable title={`16.11. ${t("merikanto")}`} image="/images/PK.jpg">
