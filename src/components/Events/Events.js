@@ -39,7 +39,7 @@ const Events = () => {
         </Links>
       </Expandable>
 
-      <Expandable title={`14.11. ${t("fjs")}`}>
+      <Expandable title={`14.11. ${t("fjs")}`} image="/images/FJS.png">
         <EventInfo date="2023-11-14" time="17:00" location="Servin mökki" />
         <p>{t("fjs-info")}</p>
         <Links>
