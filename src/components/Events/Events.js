@@ -19,8 +19,19 @@ const Events = () => {
   return (
     <>
       <Expandable title={`13.11. ${t("alkupamaus")}`}>
-        <EventInfo date="2023-11-13" time="?" location="?" />
+        <EventInfo date="2023-11-13" time="12:00-20:00" location="Teekkarikylä" />
         <p>{t("alkupamaus-info")}</p>
+        <Links>
+          <Button
+            as="a"
+            href="https://t.me/Opiskelijakulttuurimuseobot"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Telegram id="icon" />
+            <p>Opiskelijakulttuurimuseo bot</p>
+          </Button>
+        </Links>
       </Expandable>
 
       <Expandable title={`13.11. ${t("igs")}`} image="/images/IGS.png">
